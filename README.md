@@ -1,8 +1,8 @@
 # CerenityStudioPlugin
-- Tools for Remove Unused Asset (Resource, Unsued from Editor/Game, Clear Cache).
-- Tools for Build AssetBundles (download patch data/load data from Server).
-- Tools for Setup NewFolder when you're creating a new Project.
-- Discord Rich Presence Plugin (made by Claytoo, please check below for how to use it).
+- Tools for **Remove Unused Asset** (Resource, Unused from Editor/Game, Clear Cache).
+- Tools for **Build AssetBundles** (download patch data/load data from Server).
+- Tools for **Setup NewFolder** when you're creating a new Project.
+- **Discord Rich Presence Plugin** (made by Claytoo, please check below for how to use it).
 
 #
 ## **Discord Rich Presence by Claytoo**
@@ -16,8 +16,6 @@ This *Plugin Configuration* is on *Inspector*, so you can attach it to any spesi
 ### **Getting Started**
 
 ***THIS PLUGIN IS NOT WORKING ON WEBGL BUILD, PLEASE EXCLUDE FROM BUILD OR REMOVE IT***
-
-First, copy Assets folder, and Place to your Unity Project
 
 Go to Discord [Developer Application](https://discord.com/developers/applications/) and make a New Application
 
