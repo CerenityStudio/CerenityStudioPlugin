@@ -1,16 +1,19 @@
 # CerenityStudioPlugin
- 
-## **Unity3D - Discord Rich Presence by Claytoo**
-a Discord Rich Presence Plugin for your game (Unity3D Game Engine)
+- Tools for Remove Unused Asset (Resource, Unsued from Editor/Game, Clear Cache).
+- Tools for Build AssetBundles (download patch data/load data from Server).
+- Tools for Setup NewFolder when you're creating a new Project.
+- Discord Rich Presence Plugin (made by Claytoo, please check below for how to use it).
 
 #
-## **About**
+## **Discord Rich Presence by Claytoo**
+a Discord Rich Presence Plugin for your game (Unity3D Game Engine)
+
+### **About**
 I'm made this Plugin using **DiscordRichPresenceSDK** package.
 
 This *Plugin Configuration* is on *Inspector*, so you can attach it to any spesific *Scene* (using Prefabs)
 
-#
-## **Getting Started**
+### **Getting Started**
 
 ***THIS PLUGIN IS NOT WORKING ON WEBGL BUILD, PLEASE EXCLUDE FROM BUILD OR REMOVE IT***
 
@@ -50,15 +53,13 @@ This is How to Configure your Discord Rich Presence Status
 
 ****You can see how to putting an image down below on Optional Section***
 
-#
-## **Here is the result**
+### **Here is the result**
 
 Discord RP Preview
 
 ![](https://cdn.discordapp.com/attachments/784761936230744074/943584812512469042/unknown.png)
 
-#
-## ***This is optional*** 
+### ***This is optional*** 
 After that go to **Rich Presence** > **Art Assets**
 
 ![](https://cdn.discordapp.com/attachments/784761936230744074/943579215855501392/unknown.png)
