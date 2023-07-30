@@ -7,10 +7,13 @@ a Discord Rich Presence Plugin for your game (Unity3D Game Engine)
 ## **About**
 I'm made this Plugin using **DiscordRichPresenceSDK** package.
 
-This *Plugin Configuration* is on *Inspector*, so you can attach it to any different *GameObject* on any spesific *Scene*
+This *Plugin Configuration* is on *Inspector*, so you can attach it to any spesific *Scene* (using Prefabs)
 
 #
 ## **Getting Started**
+
+***THIS PLUGIN IS NOT WORKING ON WEBGL BUILD, PLEASE EXCLUDE FROM BUILD OR REMOVE IT***
+
 First, copy Assets folder, and Place to your Unity Project
 
 Go to Discord [Developer Application](https://discord.com/developers/applications/) and make a New Application
@@ -29,66 +32,21 @@ Put the redirect link that we want to use, which is **http://127.0.0.1** then cl
 
 ![](https://cdn.discordapp.com/attachments/784761936230744074/943577855026147488/unknown.png)
 
-Go to your Unity Project, then open  the script located at **Assets/Plugins/DiscordGameSDK/DiscordController.cs**
-```csharp
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Discord;
+Go to your Unity Project, then open  the prefab located at **Assets/CerenityStudio/Prefabs/csDiscordManager** then drag to your scene
 
-public class DiscordController : MonoBehaviour
-{
-    public Discord.Discord discord;
+Look at the Inspector, change the **Application ID** with your CLIENT ID, CLIENT ID is located on **OAuth2** > **General**
 
-    public string sDetails, sState, sLargeImage, sLargeText, sSmallImage, sSmallText;
-
-    void Start()
-    {
-        discord = new Discord.Discord(/*PUT_YOUR_CLIENT ID_HERE*/, (System.UInt64)Discord.CreateFlags.Default);
-        var activityManager = discord.GetActivityManager();
-        var activity = new Discord.Activity
-        {
-            Details = sDetails,
-            State = sState,
-            Assets = 
-            {
-                LargeImage = sLargeImage,
-                LargeText = sLargeText,
-                SmallImage = sSmallImage,
-                SmallText = sSmallText
-            },
-        };
-        activityManager.UpdateActivity(activity, (res) => {
-            if (res == Discord.Result.Ok)
-                Debug.Log("Discord status set!");
-            else
-                Debug.LogError("Discord status failed!");
-        });
-    }
-
-    void Update()
-    {
-        discord.RunCallbacks();
-    }
-}
-```
-
-Change the __/* PUT_YOUR_CLIENT_ID_HERE */__ with your CLIENT ID, CLIENT ID is located on **OAuth2** > **General**
-
+![](https://cdn.discordapp.com/attachments/784761936230744074/1135285599373377626/Screenshot_2023-07-31_at_01.59.13.png)
 ![](https://cdn.discordapp.com/attachments/784761936230744074/943582726097862676/unknown.png)
 
-After that, you can attach **DiscordController.cs** script to any GameObject on your Scene.
 
 This is How to Configure your Discord Rich Presence Status
-
-- **S Details** is for Details
-- **S State** is for State
-- **S Large Image** is for Large Image Name that you upload on Discord Developer Application **Rich Presence** > **Art Assets** > **Rich Presence Assets**
-- **S Large Text** is for text details on Large Image
-- **S Small Image** is for Small Image Name that you upload on Discord Developer Application **Rich Presence** > **Art Assets** > **Rich Presence Assets**
-- **S Small Text** is for text details on Small Image
-
-![](https://cdn.discordapp.com/attachments/784761936230744074/943585070403424318/unknown.png)
+- **Details** is for Details
+- **State** is for State
+- **Large Image** is for Large Image Name that you upload on Discord Developer Application **Rich Presence** > **Art Assets** > **Rich Presence Assets**
+- **Large Text** is for text details on Large Image
+- **Small Image** is for Small Image Name that you upload on Discord Developer Application **Rich Presence** > **Art Assets** > **Rich Presence Assets**
+- **Small Text** is for text details on Small Image
 
 ****You can see how to putting an image down below on Optional Section***
 
