@@ -15,8 +15,6 @@ This *Plugin Configuration* is on *Inspector*, so you can attach it to any spesi
 
 ### **Getting Started**
 
-***THIS PLUGIN IS NOT WORKING ON WEBGL BUILD, PLEASE EXCLUDE FROM BUILD OR REMOVE IT***
-
 Go to Discord [Developer Application](https://discord.com/developers/applications/) and make a New Application
 
 ![alt img](https://cdn.discordapp.com/attachments/784761936230744074/943572752785354802/unknown.png)
