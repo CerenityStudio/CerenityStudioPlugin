@@ -12,7 +12,7 @@ namespace CerenityStudio
 #region VARIABLE
         [Header(" Configuration ")]
         [SerializeField] private TextMeshProUGUI versionNumberBuild;
-        [SerializeField] private string buildVersion;
+        [SerializeField] private string buildVersion = "your_version_number_here";
 #endregion
 
 #region UNITY FUNCTION
